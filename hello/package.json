@@ -1,0 +1,11 @@
+{
+  "name": "hello",
+  "version": "0.0.1",
+  "description": "A NodeJS webserver to run inside a docker container",
+  "main": "index.js",
+  "author": "pieter_93_pva@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "*"
+  }
+}
