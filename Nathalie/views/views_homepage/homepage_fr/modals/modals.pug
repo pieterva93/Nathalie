@@ -1,0 +1,66 @@
+#disclaimer.modal.fade(tabindex='-1', role='dialog', aria-labelledby='disclaimerLabel', aria-hidden='true')
+    .modal-dialog.modal-lg
+        .modal-content
+            .modal-header
+                button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') ×
+                    span.sr-only Close
+                h2#disclaimerLabel.modal-title=disclaimertitel
+            .modal-body
+                p=disclaimerparagraaf1
+                p=disclaimerparagraaf2
+                p=disclaimerparagraaf3
+            .modal-footer
+                button.btn.btn-default(type='button', data-dismiss='modal')=sluitknop
+#voorwaarden.modal.fade(tabindex='-1', role='dialog', aria-labelledby='voorwaardenLabel', aria-hidden='true')
+    .modal-dialog.modal-lg
+        .modal-content
+            .modal-header
+                button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') ×
+                    span.sr-only Close
+                h2#voorwaardenLabel.modal-title
+                    =algemeentitel
+                    span(lang='en') Terms and Conditions
+            .modal-body
+                ul
+                    li
+                        h4 =algemeensubtitel1
+                        ul
+                            li=algemeenlijst1
+                            li=algemeenlijst2
+                            li=algemeenlijst3
+                            li=algemeenlijst4
+                            li=algemeenlijst5
+                            li=algemeenlijst6
+                        br
+                    li
+                        h4=algmeensubtitel2
+                        p
+                            =algemeengeheimparagraaf1
+                            br
+                            =algemeengeheimparagraaf2
+
+                    li
+                        h4=algemeensubtitel3
+                        p
+                        =algemeenparagraaf1
+                    li
+                        h4
+                            =algemeensubtitel4
+                        p
+                            =algemeenparagraaf2
+            .modal-footer
+                button.btn.btn-default(type='button', data-dismiss='modal')=sluitknop
+#privacy.modal.fade(tabindex='-1', role='dialog', aria-labelledby='privacyLabel', aria-hidden='true')
+    .modal-dialog.modal-lg
+        .modal-content
+            .modal-header
+                button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') ×
+                    span.sr-only Close
+                h2#privacyLabel.modal-title=privacytitel
+            .modal-body
+                p=Privacyparagraaf1
+            .modal-footer
+                button.btn.btn-default(type='button', data-dismiss='modal')=sluitknop

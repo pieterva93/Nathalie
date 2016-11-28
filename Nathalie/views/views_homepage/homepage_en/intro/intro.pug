@@ -1,0 +1,36 @@
+section.section.intro.intuitie(id='intro')
+    .section-body
+        .container
+            .row
+                .intro-wrapper.col-md-12.col-xs-12
+                    .intro-top
+                        h1.brand-heading
+                            =subtitel1
+                            |&nbsp
+                            small=subtitel2
+
+                        p.intro-text
+                            =intro
+
+                        p.intro-text=introductietekst1
+                            br
+                            =introductietekst2
+                            br
+                            =introductietekst3
+
+                    .intro-bottom.page-scroll
+                        a.button(id='button-course', href=menulink4)
+                            =knopintro
+
+
+                    .language.hidden-xs
+                        .btn-toolbar(role='toolbar')
+                            .btn-group
+                                a(href='/')
+                                    span.flag-icon.flag-nl-32
+                                a(href='/en')
+                                    span.flag-icon.flag-gb-32
+                                a(href='/fr')
+                                    span.flag-icon.flag-fr-32
+
+

@@ -1,0 +1,61 @@
+section.section.contact(id='contact')
+    .section-body.container
+        .section-container
+            .vert-center
+                .row
+                    .col-lg-4.col-lg-offset-1.col-sm-4.col-md-6.col-cs-10.contact-left
+                        h3.span=contactlefttitel
+                        br
+
+                        p
+                            span
+                                =contactleftdeel1
+                                br
+                                =contactleftdeel2
+                                br
+                                br
+                                =contactleftnaam
+                                br
+                                =contactleftadres
+                                br
+                                =contactlefttel
+
+                        br
+                        p
+                            a.social(href=contactleftmaillink)
+                                =contactleftmailtekst
+                                br
+                                br
+                            a.social(href=contactleftmaillink)
+                                i.fa.fa-inbox
+                        p
+                            =contactleftkvk
+                            br
+                            =contactleftiban
+                            br
+                            =contactlefttnv
+                    .col-lg-5.col-sm-8.col-md-6.col-xs-10.contact-right
+                        h3=contactrechtstitel
+                        br
+                        h4.text-left=contactrechtssubtitel1
+                        p
+                            span
+                                =activiteit1
+                                br
+                                =activiteit1datum
+                                br
+                                =activiteit1locatie
+
+                        h4.text-left=contactrechtssubtitel2
+                        p
+                            span
+                                =activiteit3
+                                br
+                                =activiteit3datum
+                                br
+                                =activiteit3locatie
+                        br
+                        p.page-scroll
+                            a.button(href=linkknop)
+                                =tekstknop
+

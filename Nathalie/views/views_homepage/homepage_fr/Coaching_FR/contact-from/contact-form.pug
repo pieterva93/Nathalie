@@ -1,0 +1,75 @@
+section#contact-form.section.contact-form
+    .section-body.container
+        .section-header
+            h2
+                span(lang='nl') Stuur een bericht
+                span(lang='en') Send a message
+            .divider-grey
+        .section-container
+            .row
+                .col-lg-10.col-lg-offset-1
+                    form(name='form-nathalie', action='http://127.0.0.1/contact', method='post', role='form')
+                        .form-group
+                            label(for='InputName')
+                                //if lt IE 10
+                                  span(lang='nl') Naam
+                                  span(lang='en') Naam
+                            input.form-control(required='REQUIRED', name='naam', placeholder_class='.placeholder', title='Naam')
+                            .required *
+                            .placeholder.hidden
+                                span(lang='nl') Naam
+                                span(lang='en') Name
+                        .form-group
+                            label(for='Email')
+                            //if lt IE10
+                                span(lang='nl') E-mail
+                                span(lang='en') E-mail
+                            input.form-control(type='email', required='REQUIRED', name='_recipients', placeholder_class='.placeholder', title='E-mail')
+                            .required *
+                            .placeholder.hidden
+                                span(lang='nl') E-mail
+                                span(lang='en') E-mail
+                        .form-group
+                            label(for='Tel')
+                                //if lt IE 10
+                                  span(lang='nl') Telefoonnummer
+                                  span(lang='en') Phonenumber
+                            input.form-control(name='Telefoonnummer', placeholder_class='.placeholder', title='Telefoonnummer')
+                            .placeholder.hidden
+                                span(lang='nl') Telefoonnummer
+                                span(lang='en') Phonenumber
+                        .form-group
+                            label(for='Vraag')
+                                //if lt IE 10
+                                  span(lang='nl') Verstuur bericht
+                                  span(lang='en') Submit message
+                            textarea.form-control(required='REQUIRED', name='Uw vraag', placeholder_class='.placeholder', title='Stel uw vraag')
+                            .required *
+                            .placeholder.hidden
+                                span(lang='nl') Stel uw vraag
+                                span(lang='en') Ask your question
+                        .hidden
+                            //
+                              <input type="HIDDEN" name="_replyToField" value="info@sbrviewer.eu|info@sbrverwerker.eu|info@sbrcommunicator.eu" />
+                              voor de zekerheid alleen info@sbrsbrviewer.nl
+                            input(type='HIDDEN', name='_replyToField', value='nathalievannielen@gmail.com')
+                            select(name='_replyToFieldOption')
+                                option(value='Nathalie')  Nathalie
+                            input(type='HIDDEN', name='_replyToFieldOption$', value='Nathalie')
+                            input(type='HIDDEN', name='_subject', value='Bedankt voor uw bericht.')
+                            input(type='HIDDEN', name='_ccToField', value='frank@acc.nl')
+                            // DEBUG voor testen
+                            input(type='HIDDEN', name='_redirectUrl', value='http://www.nathalievannielen.nl/intuitie.html#contact-form')
+                            input(type='HIDDEN', name='_pretopic', value='Mail naar ')
+                            input(type='HIDDEN', name='_posttopic', value='')
+                            input(type='HIDDEN', name='_fieldOpeningText', value='U stuurde ons het volgende bericht:')
+                            input(type='HIDDEN', name='_fieldClosingText', value='Wij nemen dit bericht zo spoedig mogelijk in behandeling.')
+                            input(type='HIDDEN', name='_template', value='email-template-body-nl.html')
+                        .QapTcha
+                            .TxtShow
+                                span(lang='nl') Verstuur bericht
+                                span(lang='en') Submit message
+                            .TxtHelp
+                                span(lang='nl') Schuif naar rechts om te versturen!
+                                span(lang='en') Drag to the right to submit!
+                        input.hidden(type='submit', value='Submit')

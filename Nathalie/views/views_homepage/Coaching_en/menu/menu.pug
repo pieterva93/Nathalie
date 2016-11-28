@@ -1,0 +1,31 @@
+nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+    .container
+        .navbar-header.page-scroll
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+                i.fa.fa-bars
+            a.navbar-brand(href='#page-top')
+                =titel
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+            ul.nav.navbar-nav
+                li.hidden
+                    a(href='#intro')
+                li.page-scroll
+                    a(href=menulink1)
+                        =menu1
+                li.page-scroll
+                    a(href=menulink2)
+                        =menu2
+                li.page-scroll
+                    a(href=menulink3)
+                        =menu3
+                li.page-scroll
+                    a(href=menulink4)
+                        =menu4
+                li.visible-xs
+                    .language
+                        a(href='/')
+                            span.flag-icon.flag-nl-32
+                        a(href='/en')
+                            span.flag-icon.flag-gb-32
+                        a(href='/fr')
+                            span.flag-icon.flag-fr-32
